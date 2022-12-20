@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forside til appelsinvanden Tuborg Squash">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <title>TSquash Buddies</title>
+</head>
+
+<body class="page_body">
+    <header class="header">
+        <nav class="navigation_container">
+<!------- Tuborg Squash logo ---------------------------------------------------------------------------------->
+            <a href="index.html" class="logo"><h1>Tuborg Squash</h1></a>
+
+<!------- Mobil menu icon ------------------------------------------------------------------------------------->
+            <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+            <input type="checkbox" id="mobileicon" class="mobileicon">
+
+<!------- Menu items ------------------------------------------------------------------------------------------>
+<section class="accordion-menu">
+    <button class="accordion">Tuborg Squash</button>
+    <div class="panel">
+        <a href="smagen-af-squash.html"><p>Smagen af Squash</p></a>
+        <a href="fejlside.html"><p>Historien bag</p></a>
+        <a href="squashen-gennem-tiden.html"><p>Squashen gennem tiden</p></a>
+    </div>
+    
+    <button class="accordion">TV Tid</button>
+    <div class="panel">
+        <a href="forfriskende-origenial.html"><p>Forfriskende Origenial</p></a>
+        <a href="squash-buddies.html"><p>Squash Buddies</p></a>
+        <a href="finn-og-jacob.html"><p>Finn og Jacob</p></a>
+    </div>
+    
+    <button class="accordion">Spin Squashen</button>
+    <div class="panel">
+        <a href="spin-squashen.html"><p>Spin Squashen</p></a>
+    </div>
+    
+    <button class="accordion">Musikken</button>
+    <div class="panel">
+        <a href="fejlside.html"><p>Squash gør noget ved musikken</p></a>
+        <a href="fejlside.html"><p>Koncerter</p></a>
+        <a href="fejlside.html"><p>Festivaller</p></a>
+    </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</section>
+</nav>
+    </header>
+
+<!------- Squash Buddies -------------------------------------------------------------------------------------------->
+            <article class="squash-buddies">
+                <h1 class="overskrift">Squash Buddies</h1>
+                <div class="brødtekst">
+                    <p>Kom med ud og spil en omgang Squash med vennerne, Squash Buddies. Men husk, at have førstehjælpskassen klar.</p>
+                    <p>Squash Buddies rullede for første gang over skærmen i år 2008, men mon ikke du allerede kan synge med på melodi “For du min aller-bedste Squash Buddie yaaay”.</p>
+                    <iframe src="https://www.youtube.com/embed/e3lB4P1xy4E" title="Tuborg - Squash Buddies (Reklame)"></iframe>
+                </div>
+            </article>
+<!------- Footer -------------------------------------------------------------------------------------------->
+<footer id="forside-footer" class="footer">
+    <section class="kontakt">
+        <section class="kontakt_some">
+            <h1 class="footer_overskrift">Kontakt</h1>
+            <p class="e-mail">forbrugerservice@carlsberg.dk</p>
+        </section>
+    </section>
+
+        <section class="sociale-medier">
+            <h1 class="footer_overskrift">Følg os</h1>
+            <section class="somes">
+                <img class="some" src="img/insta.png" alt="some">
+                <img class="some" src="img/face.png" alt="some">
+            </section>
+        </section>
+
+    <section class="find-os">
+        <h1 class="footer_overskrift">Find os</h1>
+        <p class="oplysninger">Carlsberg Danmark A/S<br>J.C. Jacobsen Gade 1<br>1799 København V<br>CVR: 25508386</p>
+    </section>
+</footer>
+</html>

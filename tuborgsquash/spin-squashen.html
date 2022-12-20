@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forside til appelsinvanden Tuborg Squash">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <title>Spin Squashen</title>
+</head>
+
+<body class="page_body">
+    <header class="header">
+        <nav class="navigation_container">
+<!------- Tuborg Squash logo ---------------------------------------------------------------------------------->
+            <a href="index.html" class="logo"><h1>Tuborg Squash</h1></a>
+
+<!------- Mobil menu icon ------------------------------------------------------------------------------------->
+            <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+            <input type="checkbox" id="mobileicon" class="mobileicon">
+
+<!------- Menu items ------------------------------------------------------------------------------------------>
+<section class="accordion-menu">
+    <button class="accordion">Tuborg Squash</button>
+    <div class="panel">
+        <a href="smagen-af-squash.html"><p>Smagen af Squash</p></a>
+        <a href="fejlside.html"><p>Historien bag</p></a>
+        <a href="squashen-gennem-tiden.html"><p>Squashen gennem tiden</p></a>
+    </div>
+    
+    <button class="accordion">TV Tid</button>
+    <div class="panel">
+        <a href="forfriskende-origenial.html"><p>Forfriskende Origenial</p></a>
+        <a href="squash-buddies.html"><p>Squash Buddies</p></a>
+        <a href="finn-og-jacob.html"><p>Finn og Jacob</p></a>
+    </div>
+    
+    <button class="accordion">Spin Squashen</button>
+    <div class="panel">
+        <a href="spin-squashen.html"><p>Spin Squashen</p></a>
+    </div>
+    
+    <button class="accordion">Musikken</button>
+    <div class="panel">
+        <a href="fejlside.html"><p>Squash gør noget ved musikken</p></a>
+        <a href="fejlside.html"><p>Koncerter</p></a>
+        <a href="fejlside.html"><p>Festivaller</p></a>
+    </div>
+<script>
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</section>
+</nav>
+    </header>
+
+        <!-- Spin Squashen -->
+        <article class="spin-squashen">
+            <h1 class="overskrift">Spin Squashen</h1>
+        <div class="brødtekst">
+            <p>Grib chancen og tag et spin på Squashen. Vi udlodder en vinder d. 21.12.2022. Den heldige appelsin bliver kontaktet over mail. For at deltage i konkurrencen, skal du udfylde nedenstående oplysninger.</p>
+        </div>
+            <img class="blad" src="img/squash-stilk.png" alt="stilken til appelsinen">
+            <img class="hjul" src="img/spin-squashen-hjul.png" alt="konkurrence spin hjulet og vind en premie">
+            <img class="pil" src="img/pil-spin-squashen.png" alt="stop pilen til hjulet">
+            <h2 class="tilmeld-overskrift">Tilmeld dig her</h2>
+        
+            <form class="form">
+                <input type="text" class="navn" placeholder="Navn">
+                <input type="text" class="efternavn"  placeholder="Efternavn">
+                <input type="text" class="email" placeholder="E-mail">
+                <input type="submit" class="deltag" value="PRØV LYKKEN" placeholder="Send">
+            </form>
+        </article>
+
+<!------- Footer -------------------------------------------------------------------------------------------->
+<footer id="forside-footer" class="footer">
+    <section class="kontakt">
+        <section class="kontakt_some">
+            <h1 class="footer_overskrift">Kontakt</h1>
+            <p class="e-mail">forbrugerservice@carlsberg.dk</p>
+        </section>
+    </section>
+
+        <section class="sociale-medier">
+            <h1 class="footer_overskrift">Følg os</h1>
+            <section class="somes">
+                <img class="some" src="img/insta.png" alt="some">
+                <img class="some" src="img/face.png" alt="some">
+            </section>
+        </section>
+
+    <section class="find-os">
+        <h1 class="footer_overskrift">Find os</h1>
+        <p class="oplysninger">Carlsberg Danmark A/S<br>J.C. Jacobsen Gade 1<br>1799 København V<br>CVR: 25508386</p>
+    </section>
+</footer>
+
+</body>
+</html>

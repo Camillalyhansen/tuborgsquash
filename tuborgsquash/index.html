@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forside til appelsinvanden Tuborg Squash">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <title>Tuborg Squash</title>
+</head>
+
+<body class="page_body">
+    <header class="header">
+        <nav class="navigation_container">
+<!------- Tuborg Squash logo ---------------------------------------------------------------------------------->
+            <a href="index.html" class="logo"><h1>Tuborg Squash</h1></a>
+
+<!------- Mobil menu icon ------------------------------------------------------------------------------------->
+            <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+            <input type="checkbox" id="mobileicon" class="mobileicon">
+
+<!------- Menu items ------------------------------------------------------------------------------------------>
+<section class="accordion-menu">
+    <button class="accordion">Tuborg Squash</button>
+    <div class="panel">
+        <a href="smagen-af-squash.html"><p>Smagen af Squash</p></a>
+        <a href="fejlside.html"><p>Historien bag</p></a>
+        <a href="squashen-gennem-tiden.html"><p>Squashen gennem tiden</p></a>
+    </div>
+    
+    <button class="accordion">TV Tid</button>
+    <div class="panel">
+        <a href="forfriskende-origenial.html"><p>Forfriskende Origenial</p></a>
+        <a href="squash-buddies.html"><p>Squash Buddies</p></a>
+        <a href="finn-og-jacob.html"><p>Finn og Jacob</p></a>
+    </div>
+    
+    <button class="accordion">Spin Squashen</button>
+    <div class="panel">
+        <a href="spin-squashen.html"><p>Spin Squashen</p></a>
+    </div>
+    
+    <button class="accordion">Musikken</button>
+    <div class="panel">
+        <a href="fejlside.html"><p>Squash gør noget ved musikken</p></a>
+        <a href="fejlside.html"><p>Koncerter</p></a>
+        <a href="fejlside.html"><p>Festivaller</p></a>
+    </div>
+<script>
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</section>
+</nav>
+    </header>
+<!------- Forside -------------------------------------------------------------------------------------------->
+            <div class="img-forside">             
+                <img class="roulette" src="img/closeup-squash.jpeg" alt="forfriskende origenial reklame billede">
+            </div> 
+
+            <section class="nyheder">
+            <div class="image">
+                <h2>SENESTE NYT</h2>
+                <img class="friskpresset-comeback" src="img/forfriskende-origenial-nyhed.png" alt="et friskpresset comeback billede">
+            </div>
+            <div class="text">
+                <h1>Et friskpresset comeback</h1>
+                <p>Sig hej til Tuborg Squash nye look. 
+                    Bare rolig, det nye design ændre ikke på den gode orange smag. 
+                    Den er stadig alletiders appelsinvand.</p>
+                <p>Find den nye Tuborg Squash på dåse, flaske og på køl i hele Danmark.</p>
+                <a href="squashen-gennem-tiden.html" class="laes-mere"><h3>LÆS MERE: TUBORG SQUASH GENNEM TIDEN</h3></a>
+            </div>
+            </section>
+
+        <div id="container">
+            <div class="forside-menu">
+                <a href="smagen-af-squash.html"><img src="img/smagen-af-squash.png" alt="menuer"></a>
+                <a href="forfriskende-origenial.html"><img src="img/forfriskende-origenial.png" alt="menuer"></a>
+                <a href="squashen-gennem-tiden.html"><img src="img/squashen-gennem-tiden.png" alt="menuer"></a>
+                <a href="fejlside.html"><img src="img/historien-bag.png" alt="menuer"></a>
+                <a href="squash-buddies.html"><img src="img/squash-buddies.png" alt="menuer"></a>
+                <a href="finn-og-jacob.html"><img src="img/finn-og-jacob.png" alt="menuer"></a>
+                <a href="spin-squashen.html"><img src="img/spin-squashen.png" alt="menuer"></a>
+                <a href="fejlside.html"><img src="img/squashen-gør-noget-ved-musikken.png" alt="menuer"></a>
+                <a href="fejlside.html"><img src="img/koncerter.png" alt="menuer"></a>
+                <a href="fejlside.html"><img src="img/festivaller.png" alt="menuer"></a>
+            </div>
+        </div>
+
+<!------- Footer -------------------------------------------------------------------------------------------->
+<footer id="forside-footer" class="footer">
+    <section class="kontakt">
+        <section class="kontakt_some">
+            <h1 class="footer_overskrift">Kontakt</h1>
+            <p class="e-mail">forbrugerservice@carlsberg.dk</p>
+        </section>
+    </section>
+
+        <section class="sociale-medier">
+            <h1 class="footer_overskrift">Følg os</h1>
+            <section class="somes">
+                <img class="some" src="img/insta.png" alt="some">
+                <img class="some" src="img/face.png" alt="some">
+            </section>
+        </section>
+
+    <section class="find-os">
+        <h1 class="footer_overskrift">Find os</h1>
+        <p class="oplysninger">Carlsberg Danmark A/S<br>J.C. Jacobsen Gade 1<br>1799 København V<br>CVR: 25508386</p>
+    </section>
+</footer>
+</body>
+</html>
